@@ -5,6 +5,16 @@
 <title>ゆずの山行記録</title>
 </head>
 <body style="background-color:#f0f8ff">
+    function draw() {
+  const canvas = document.getElementById("canvas");
+  if (canvas.getContext) {
+    const ctx = canvas.getContext("2d");
+
+    ctx.fillRect(25, 25, 100, 100);
+    ctx.clearRect(45, 45, 60, 60);
+    ctx.strokeRect(50, 50, 50, 50);
+  }
+}
 <body>
     <div style="padding: 1rem; border-top: 6px double #263f1f; border-bottom: 6px double #263f1f; font-size: 28px;"><center><b>ゆず<br>の<br>山行記録</b></center></div>
 <p>
